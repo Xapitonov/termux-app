@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+    <!ENTITY TERMUX_PACKAGE_NAME "com.termux">
+    <!ENTITY TERMUX_APP_NAME "Termux">
+    <!ENTITY TERMUX_API_APP_NAME "Termux:API">
+    <!ENTITY TERMUX_BOOT_APP_NAME "Termux:Boot">
+    <!ENTITY TERMUX_FLOAT_APP_NAME "Termux:Float">
+    <!ENTITY TERMUX_STYLING_APP_NAME "Termux:Styling">
+    <!ENTITY TERMUX_TASKER_APP_NAME "Termux:Tasker">
+    <!ENTITY TERMUX_WIDGET_APP_NAME "Termux:Widget">
+]>
+<resources>
+    <string name="application_name">&TERMUX_APP_NAME;</string>
+    <string name="shared_user_label">Пользователь &TERMUX_APP_NAME;</string>
+    <string name="permission_run_command_label">Выполнение команд в среде &TERMUX_APP_NAME;</string>
+    <string name="permission_run_command_description">Выполнять произвольные команды и получать доступ к файлам в среде &TERMUX_APP_NAME;</string>
+    <string name="bootstrap_installer_body">Устанавливаются базовые пакеты…</string>
+    <string name="bootstrap_error_title">Не удалось установить базовые пакеты</string>
+    <string name="bootstrap_error_body">&TERMUX_APP_NAME; не смог установить базовые пакеты.</string>
+    <string name="bootstrap_error_abort">Прервать</string>
+    <string name="bootstrap_error_try_again">Попробовать снова</string>
+    <string name="bootstrap_error_not_primary_user_message">&TERMUX_APP_NAME; можно запускать только от основного пользователя.
+        \nБинарные файлы bootstrap содержат жестко заданный путь $PREFIX и могут быть установлены только в:\n%1$s.</string>
+    <string name="bootstrap_error_installed_on_portable_sd">&TERMUX_APP_NAME; нельзя устанавливать на съемную SD-карту.
+        \nБинарные файлы bootstrap содержат жестко заданный путь $PREFIX и могут быть установлены только в:\n%1$s.</string>
+    <string name="action_new_session">Новая сессия</string>
+    <string name="action_new_session_failsafe">Резервная</string>
+    <string name="title_max_terminals_reached">Достигнуто максимальное число терминалов</string>
+    <string name="msg_max_terminals_reached">Закройте существующие терминалы прежде чем создавать новые.</string>
+    <string name="title_rename_session">Задать имя сессии</string>
+    <string name="action_rename_session_confirm">Применить</string>
+    <string name="title_create_named_session">Новая именованная сессия</string>
+    <string name="action_create_named_session_confirm">Создать</string>
+    <string name="action_toggle_soft_keyboard">Клавиатура</string>
+    <string name="msg_enabling_terminal_toolbar">Включение панели терминала</string>
+    <string name="msg_disabling_terminal_toolbar">Отключение панели терминала</string>
+    <string name="action_select_url">Выбрать URL</string>
+    <string name="title_select_url_dialog">Нажмите URL для копирования или удерживайте для открытия</string>
+    <string name="title_select_url_none_found">В терминале URL не найден.</string>
+    <string name="msg_select_url_copied_to_clipboard">URL скопирован в буфер обмена</string>
+    <string name="action_share_transcript">Поделиться логом терминала</string>
+    <string name="title_share_transcript">Лог терминала</string>
+    <string name="title_share_transcript_with">Отправить лог:</string>
+    <string name="action_share_selected_text">Поделиться выделенным текстом</string>
+    <string name="title_share_selected_text">Текст терминала</string>
+    <string name="title_share_selected_text_with">Отправить выделенный текст:</string>
+    <string name="action_autofill_username">Автозаполнение имени пользователя</string>
+    <string name="action_autofill_password">Автозаполнение пароля</string>
+    <string name="action_reset_terminal">Сбросить</string>
+    <string name="msg_terminal_reset">Терминал сброшен</string>
+    <string name="action_kill_process">Завершить процесс (%d)</string>
+    <string name="title_confirm_kill_process">Вы действительно хотите завершить эту сессию?</string>
+    <string name="action_style_terminal">Стиль</string>
+    <string name="action_toggle_keep_screen_on">Не выключать экран</string>
+    <string name="action_open_help">Справка</string>
+    <string name="action_open_settings">Настройки</string>
+    <string name="action_report_issue">Сообщить о проблеме</string>
+    <string name="msg_generating_report">Формирование отчета</string>
+    <string name="msg_add_termux_debug_info">Добавить отладочную информацию Termux в отчет?</string>
+    <string name="error_styling_not_installed">Плагин &TERMUX_STYLING_APP_NAME; не установлен.</string>
+    <string name="action_styling_install">Установить</string>
+    <string name="notification_action_exit">Выход</string>
+    <string name="notification_action_wake_lock">Заблокировать пробуждение</string>
+    <string name="notification_action_wake_unlock">Разблокировать пробуждение</string>
+    <string name="error_display_over_other_apps_permission_not_granted_to_start_terminal">&TERMUX_APP_NAME; требует разрешение отображать поверх других приложений для запуска терминалов из фона на Android >= 10.
+        Предоставьте разрешение в Настройках -> Приложения -> &TERMUX_APP_NAME; -> Дополнительно</string>
+    <string name="error_termux_service_invalid_execution_command_runner">Недопустимый исполнитель команды для TermuxService: `%1$s`</string>
+    <string name="error_termux_service_unsupported_execution_command_runner">Неподдерживаемый исполнитель команды для TermuxService: `%1$s`</string>
+    <string name="error_termux_service_unsupported_execution_command_shell_create_mode">Неподдерживаемый режим создания оболочки для TermuxService: `%1$s`</string>
+    <string name="error_termux_service_execution_command_shell_name_unset">Имя оболочки не задано при режиме создания `%1$s`</string>
+    <string name="error_run_command_service_invalid_intent_action">Недопустимое действие intent для RunCommandService: `%1$s`</string>
+    <string name="error_run_command_service_invalid_execution_command_runner">Недопустимый исполнитель команды для RunCommandService: `%1$s`</string>
+    <string name="error_run_command_service_mandatory_extra_missing">Отсутствует обязательный параметр для RunCommandService: \"%1$s\"</string>
+    <string name="error_run_command_service_api_help">Посетите %1$s для получения информации о RUN_COMMAND Intent.</string>
+    <string name="title_file_received">Сохранить файл в ~/downloads/</string>
+    <string name="action_file_received_edit">Редактировать</string>
+    <string name="action_file_received_open_directory">Открыть каталог</string>
+    <string name="error_termux_service_start_failed_general">Не удалось запустить TermuxService. Проверьте logcat для сообщений об ошибках.</string>
+    <string name="error_termux_service_start_failed_bg">Не удалось запустить TermuxService в фоне из-за ограничений Android.</string>
+    <string name="title_activity_termux_settings">Настройки &TERMUX_APP_NAME;</string>
+    <string name="termux_preferences_title">&TERMUX_APP_NAME;</string>
+    <string name="termux_preferences_summary">Настройки приложения &TERMUX_APP_NAME;</string>
+    <string name="termux_debugging_preferences_title">Отладка</string>
+    <string name="termux_debugging_preferences_summary">Настройки отладки</string>
+    <string name="termux_logging_header">Логирование</string>
+    <string name="termux_log_level_title">Уровень логирования</string>
+    <string name="termux_terminal_view_key_logging_enabled_title">Логирование клавиш терминала</string>
+    <string name="termux_terminal_view_key_logging_enabled_off">Нажатия клавиш в терминале не будут записываться. (По умолчанию)</string>
+    <string name="termux_terminal_view_key_logging_enabled_on">Логи Logcat будут содержать записи нажатий клавиш терминала. Они очень подробные и рекомендуется отключать для нормальной работы.</string>
+    <string name="termux_plugin_error_notifications_enabled_title">Уведомления об ошибках плагинов</string>
+    <string name="termux_plugin_error_notifications_enabled_off">Отключить всплывающие уведомления и оповещения о ошибках плагинов.</string>
+    <string name="termux_plugin_error_notifications_enabled_on">Показывать всплывающие уведомления и оповещения об ошибках плагинов. (По умолчанию)</string>
+    <string name="termux_crash_report_notifications_enabled_title">Уведомления об отчётах о сбоях</string>
+    <string name="termux_crash_report_notifications_enabled_off">Отключить уведомления об отчётах о сбоях.</string>
+    <string name="termux_crash_report_notifications_enabled_on">Показывать уведомления об отчётах о сбоях. (По умолчанию)</string>
+    <string name="termux_terminal_io_preferences_title">Ввод/вывод терминала</string>
+    <string name="termux_terminal_io_preferences_summary">Настройки ввода-вывода терминала</string>
+    <string name="termux_keyboard_header">Клавиатура</string>
+    <string name="termux_soft_keyboard_enabled_title">Включить программную клавиатуру</string>
+    <string name="termux_soft_keyboard_enabled_off">Программная клавиатура будет отключена.</string>
+    <string name="termux_soft_keyboard_enabled_on">Программная клавиатура будет включена. (По умолчанию)</string>
+    <string name="termux_soft_keyboard_enabled_only_if_no_hardware_title">Включение программной клавиатуры только при отсутствии аппаратной</string>
+    <string name="termux_soft_keyboard_enabled_only_if_no_hardware_off">Программная клавиатура будет включена даже если подключена аппаратная. (По умолчанию)</string>
+    <string name="termux_soft_keyboard_enabled_only_if_no_hardware_on">Программная клавиатура будет включена только если аппаратная не подключена.</string>
+    <string name="termux_terminal_view_preferences_title">Вид терминала</string>
+    <string name="termux_terminal_view_preferences_summary">Настройки отображения терминала</string>
+    <string name="termux_terminal_view_view_header">Отображение</string>
+    <string name="termux_terminal_view_terminal_margin_adjustment_title">Настройка отступов терминала</string>
+    <string name="termux_terminal_view_terminal_margin_adjustment_off">Коррекция отступов терминала отключена.</string>
+    <string name="termux_terminal_view_terminal_margin_adjustment_on">Коррекция отступов терминала включена. Рекомендуется включить, чтобы программная клавиатура не закрывала дополнительные клавиши или часть экрана. Если вызывает мерцание экрана — отключите. (По умолчанию)</string>
+    <string name="termux_api_preferences_title">&TERMUX_API_APP_NAME;</string>
+    <string name="termux_api_preferences_summary">Настройки приложения &TERMUX_API_APP_NAME;</string>
+    <string name="termux_float_preferences_title">&TERMUX_FLOAT_APP_NAME;</string>
+    <string name="termux_float_preferences_summary">Настройки приложения &TERMUX_FLOAT_APP_NAME;</string>
+    <string name="termux_tasker_preferences_title">&TERMUX_TASKER_APP_NAME;</string>
+    <string name="termux_tasker_preferences_summary">Настройки приложения &TERMUX_TASKER_APP_NAME;</string>
+    <string name="termux_widget_preferences_title">&TERMUX_WIDGET_APP_NAME;</string>
+    <string name="termux_widget_preferences_summary">Настройки приложения &TERMUX_WIDGET_APP_NAME;</string>
+    <string name="about_preference_title">О программе</string>
+    <string name="donate_preference_title">Пожертвования</string>
+</resources>
